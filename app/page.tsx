@@ -2,13 +2,18 @@
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const nedan = [
-    100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000, 4000, 5000,
-    6000, 7000, 8000, 9000, 10000,
-  ];
+  // const nedan = [
+  //   100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000, 4000, 5000,
+  //   6000, 7000, 8000, 9000, 10000,
+  // ];
   const zyutugo = ["高い", "安い", "ちょうどいい"];
 
-  const getRandomNedan = () => nedan[Math.floor(Math.random() * nedan.length)];
+  // 100から10000の間で100刻みの乱数を生成
+  const getRandomNedan = () => {
+    return Math.floor(Math.random() * (10000 / 100)) * 100 + 100;
+  };
+
+  //const getRandomNedan = () => nedan[Math.floor(Math.random() * nedan.length)];
   const getRandomZyutugo = () =>
     zyutugo[Math.floor(Math.random() * zyutugo.length)];
 
@@ -143,6 +148,10 @@ export default function Home() {
             answerボタンを押すと答えが表示されます。一番近かった人が勝利です
           </li>
         </ul>
+        <h2 className="pt-2">
+          2024/10/9更新:
+          お題の金額は100円から10000円の間で100円刻みでランダムに決定されます
+        </h2>
       </div>
     </div>
   );
