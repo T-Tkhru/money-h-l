@@ -15,7 +15,6 @@ export default function Home() {
   const [randomNedan, setRandomNedan] = useState(0);
   const [randomZyutugo, setRandomZyutugo] = useState("");
   const [inputValue, setInputValue] = useState("");
-  const [displayText, setDisplayText] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
   const [start, setStart] = useState(false);
@@ -26,7 +25,6 @@ export default function Home() {
     setRandomNedan(newNedan);
     setRandomZyutugo(newZyutugo);
     setInputValue("");
-    setDisplayText("");
     setSubmitted(false);
     setShowAnswer(false);
   };
