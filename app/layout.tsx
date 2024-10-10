@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Money H L",
-  description: "Money H L",
+  title: "お金の価値観クイズ",
+  description: "相手のお金の価値観を予想しよう！",
 };
 
 export default function RootLayout({
